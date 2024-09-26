@@ -13,11 +13,15 @@
      <style>
         #banner {
 
-          width : 100%;
-          height: 360px;
-          object-fit:cover ; 
-          
-        }
+         
+          width: 100%;
+          padding-top: 30%; /* Adjust this to match the aspect ratio of the image */
+          background-image: url('https://4100ef41-fbd8-4569-9871-fa60c75dc6a0-00-21hw8bxnocf55.sisko.replit.dev/static/photo.jpeg');
+          background-size: cover;
+          background-position: center;
+          margin-bottom: 100px;
+       }
+          </style>
 
        
      </style>
@@ -25,12 +29,14 @@
    </head>
    <body>
      {%include 'nav.html'%}
+     <img class = " .img-fluid "  id="banner" src="https://4100ef41-fbd8-4569-9871-fa60c75dc6a0-00-21hw8bxnocf55.sisko.replit.dev/static/photo.jpeg" height="320" alt="Banner Image">
+     
      <div class = "container " >
        <h1 class = "text-center mt-2 mb-4 ">{{ company_name }}</h1>
 
-       <img class = " .img-fluid "  id="banner" src="https://4100ef41-fbd8-4569-9871-fa60c75dc6a0-00-21hw8bxnocf55.sisko.replit.dev/static/photo.jpeg" height="320" alt="Banner Image">
+       
 
-       <h2  class = "text-center mt-5  mb-15" >About Skill Net</h2>
+
 
        <p style = "font-size:30px;"  > NetSkills is a cutting-edge platform dedicated to connecting job seekers with employers in a seamless and efficient manner. Our mission is to bridge the gap between talent and opportunity, empowering individuals to showcase their skills and find jobs that align with their career aspirations. With an intuitive interface and a focus on personalized job recommendations, NetSkills helps professionals discover opportunities tailored to their strengths, while enabling companies to find the perfect candidates to grow their teams. We believe in creating a dynamic, inclusive space that fosters professional growth and career success for all..</p>
 
